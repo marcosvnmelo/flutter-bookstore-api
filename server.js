@@ -114,6 +114,10 @@ const books = [
   },
 ];
 
+server.get("/", (req, res) => {
+  return res.status(200);
+});
+
 server.get("/books", (req, res) => {
   return res.json(books);
 });
