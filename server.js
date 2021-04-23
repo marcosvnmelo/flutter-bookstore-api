@@ -128,4 +128,4 @@ server.get("/book/:index", (req, res) => {
   return res.json(books[index]);
 });
 
-server.listen(process.env.port, () => console.log('running'));
+server.listen(process.env.PORT, () => console.log('running'));
