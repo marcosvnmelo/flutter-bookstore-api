@@ -16,6 +16,8 @@ const books = [
     price: 12.00,
     year: 2008,
     language: "Português",
+    type: '',
+    description: '',
   },
   {
     imageUrl: "https://m.media-amazon.com/images/I/51amKTwzkPL.jpg",
@@ -24,6 +26,8 @@ const books = [
     price: 35.92,
     year: 2018,
     language: "Português",
+    type: '',
+    description: '',
   },
   {
     imageUrl:
@@ -33,6 +37,8 @@ const books = [
     price: 21.53,
     year: 2020,
     language: "Português",
+    type: '',
+    description: '',
   },
   {
     imageUrl:
@@ -42,6 +48,8 @@ const books = [
     price: 20.89,
     year: 2020,
     language: "Português",
+    type: '',
+    description: '',
   },
   {
     imageUrl: "https://m.media-amazon.com/images/I/51XULadddlL.jpg",
@@ -50,6 +58,8 @@ const books = [
     price: 7.99,
     year: 1978,
     language: "Português",
+    type: '',
+    description: '',
   },
   {
     imageUrl:
@@ -59,6 +69,8 @@ const books = [
     price: 17.0,
     year: 2005,
     language: "Português",
+    type: '',
+    description: '',
   },
   {
     imageUrl: "https://m.media-amazon.com/images/I/91rtArfzScL.jpg",
@@ -67,6 +79,8 @@ const books = [
     price: 12.81,
     year: 2014,
     language: "Português",
+    type: '',
+    description: '',
   },
   {
     imageUrl:
@@ -76,6 +90,8 @@ const books = [
     price: 39.90,
     year: 2018,
     language: "Português",
+    type: '',
+    description: '',
   },
   {
     imageUrl:
@@ -85,6 +101,8 @@ const books = [
     price: 7.5,
     year: 2009,
     language: "Português",
+    type: '',
+    description: '',
   },
   {
     imageUrl:
@@ -94,6 +112,8 @@ const books = [
     price: 10.0,
     year: 1997,
     language: "Português",
+    type: '',
+    description: '',
   },
   {
     imageUrl: "http://i.imgur.com/MbNcr6s.jpg",
@@ -102,6 +122,8 @@ const books = [
     price: 23.9,
     year: 2015,
     language: "Português",
+    type: '',
+    description: '',
   },
   {
     imageUrl:
@@ -111,6 +133,8 @@ const books = [
     price: 7.9,
     year: 2006,
     language: "Português",
+    type: '',
+    description: '',
   },
 ];
 
