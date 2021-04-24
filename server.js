@@ -9,6 +9,7 @@ server.use(express.json());
 
 const books = [
   {
+    id: 1,
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/812ot79TCsL.jpg",
       type: "Livro",
@@ -29,6 +30,7 @@ const books = [
     ],
   },
   {
+    id: 2,
     imageUrl: "https://m.media-amazon.com/images/I/51amKTwzkPL.jpg",
     type: "Livro",
     title: "O Morro dos Ventos Uivantes",
@@ -48,6 +50,7 @@ const books = [
     ],
   },
   {
+    id: 3,
     imageUrl:
       "http://lojasaraiva.vteximg.com.br/arquivos/ids/12054945/1002909425.jpg?v=637141927089070000",
       type: "Livro",
@@ -68,6 +71,7 @@ const books = [
     ],
   },
   {
+    id: 4,
     imageUrl:
       "https://a-static.mlcdn.com.br/618x463/o-diario-de-anne-frank-livro-edicao-de-luxo-capa-dura-spmix/spmixshop/6246607661/1ff2dbc6ca5728ceabbf260532d92cca.jpg",
       type: "Livro",
@@ -88,6 +92,7 @@ const books = [
     ],
   },
   {
+    id: 5,
     imageUrl: "https://m.media-amazon.com/images/I/51XULadddlL.jpg",
     type: "Livro",
     title: "Dom Quixote de La Mancha",
@@ -107,6 +112,7 @@ const books = [
     ],
   },
   {
+    id: 6,
     imageUrl:
       "https://f.i.uol.com.br/fotografia/2017/08/11/703323-400x600-1.jpeg",
       type: "Livro",
@@ -127,6 +133,7 @@ const books = [
     ],
   },
   {
+    id: 7,
     imageUrl: "https://m.media-amazon.com/images/I/91rtArfzScL.jpg",
     type: "Livro",
     title: "Alice no País das Maravilhas",
@@ -146,6 +153,7 @@ const books = [
     ],
   },
   {
+    id: 8,
     imageUrl:
       "https://www.tamiresdecarvalho.com/wp-content/uploads/2019/03/91XO-9O58dL.jpg",
       type: "Livro",
@@ -166,6 +174,7 @@ const books = [
     ],
   },
   {
+    id: 9,
     imageUrl:
       "https://images.tcdn.com.br/img/img_prod/617642/a_arte_da_guerra_sun_tzu_10163_1_20190719172751.png",
       type: "Livro",
@@ -186,6 +195,7 @@ const books = [
     ],
   },
   {
+    id: 10,
     imageUrl:
       "https://d19qz1cqidnnhq.cloudfront.net/imagens/capas/e46ef4365583e6c89069b2d90eb2683a627fc2d1.jpg",
       type: "Livro",
@@ -206,6 +216,7 @@ const books = [
     ],
   },
   {
+    id: 11,
     imageUrl: "http://i.imgur.com/MbNcr6s.jpg",
     type: "Livro",
     title: "Joyland",
@@ -225,6 +236,7 @@ const books = [
     ],
   },
   {
+    id: 12,
     imageUrl:
       "https://i.pinimg.com/originals/61/de/b2/61deb298947cebaaee1751b710413085.jpg",
       type: "Livro",
@@ -245,6 +257,7 @@ const books = [
     ],
   },
   {
+    id: 13,
     imageUrl:
       "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2014/10/391946-novelas-ligeras-convertidas-manganime.png?itok=5nWwtbY3",
     type: "Light novel",
