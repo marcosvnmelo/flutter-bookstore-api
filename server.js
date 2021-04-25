@@ -322,10 +322,10 @@ server.get("/book/:index", (req, res) => {
   return res.json({
     ...books[index],
     nreviews: books[index].reviews.length,
-    rating: books[0].reviews.reduce((acc, item) => {
+    rating: books[index].reviews.length > 0 ? books[index].reviews.reduce((acc, item) => {
       rating: acc.rating + item.rating;
-    }).rating,
+    }).rating / books[index].reviews.length : 0,
   });
 });
 
-server.listen(process.env.PORT, () => console.log("running"));
+server.listen(process.env.PORT, () => console.log('running'));
