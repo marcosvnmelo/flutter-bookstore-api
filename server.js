@@ -336,7 +336,7 @@ server.get("/books", (req, res) => {
 });
 
 server.get("/books/:list", (req, res) => {
-  const listParam = req.params.index;
+  const listParam = req.params.list;
 
   const booksPlusRating = books.map((book) => {
     if (book.list === listParam) {
