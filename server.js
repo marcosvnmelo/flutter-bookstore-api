@@ -336,8 +336,4 @@ server.get("/book/:index", (req, res) => {
   });
 });
 
-server.listen(process.env.PORT, () => console.log({
-  ...books[12],
-  nreviews: books[12].reviews.length,
-  rating: books[12].reviews.length > 0 ? (books[12].reviews.map(e => e.rating).reduce((acc, item) => acc + item) / books[12].reviews.length).toString() : "0.0",
-}));
+server.listen(process.env.PORT, () => console.log("API running"));
