@@ -80,10 +80,9 @@ const books = [
     imageUrl:
       "https://a-static.mlcdn.com.br/618x463/o-diario-de-anne-frank-livro-edicao-de-luxo-capa-dura-spmix/spmixshop/6246607661/1ff2dbc6ca5728ceabbf260532d92cca.jpg",
     type: "Livro",
-    title:
-      '"12 de junho de 1942 - 1° de agosto de 1944. Ao longo deste período, a jovem Anne Frank escreveu em seu diário toda a tensão que a família Frank sofreu durante a Segunda Guerra Mundial. Ao fim de muitos dias de silêncio e medo aterrorizante, eles foram descobertos pelos nazistas e deportados para campos de concentração. Anne inicialmente segui para Auschwitz e mais tarde para Bergen-belsen."',
+    title: "O Diário de Anne Frank",
     author: "Anne Frank",
-    description: "Livro",
+    description: '"12 de junho de 1942 - 1° de agosto de 1944. Ao longo deste período, a jovem Anne Frank escreveu em seu diário toda a tensão que a família Frank sofreu durante a Segunda Guerra Mundial. Ao fim de muitos dias de silêncio e medo aterrorizante, eles foram descobertos pelos nazistas e deportados para campos de concentração. Anne inicialmente segui para Auschwitz e mais tarde para Bergen-belsen."',
     price: '20.89',
     year: 2020,
     language: "Português",
@@ -188,10 +187,9 @@ const books = [
     imageUrl:
       "https://images.tcdn.com.br/img/img_prod/617642/a_arte_da_guerra_sun_tzu_10163_1_20190719172751.png",
     type: "Livro",
-    title:
-      "“A arte da guerra”, do guerreiro-filósofo chinês Sun Tzu, escrito cerca de 500 anos a.C., é um dos mais sábios e importantes tratados de estratégia militar da história. Ensinando princípios como: evitar a força e atacar a fraqueza, vencer sem lutar e que o primeiro inimigo a se enfrentar é a si mesmo, este livro milenar é um clássico entre os mais variados tipos de público. E, nos últimos tempos, tornou-se um verdadeiro manual de marketing e estratégias empresariais, que orienta executivos e líderes políticos.",
+    title: "A arte da guerra",
     author: "Sun Tzu",
-    description: "Livro",
+    description: "“A arte da guerra”, do guerreiro-filósofo chinês Sun Tzu, escrito cerca de 500 anos a.C., é um dos mais sábios e importantes tratados de estratégia militar da história. Ensinando princípios como: evitar a força e atacar a fraqueza, vencer sem lutar e que o primeiro inimigo a se enfrentar é a si mesmo, este livro milenar é um clássico entre os mais variados tipos de público. E, nos últimos tempos, tornou-se um verdadeiro manual de marketing e estratégias empresariais, que orienta executivos e líderes políticos.",
     price: '7.50',
     year: 2009,
     language: "Português",
@@ -254,9 +252,8 @@ const books = [
       "https://i.pinimg.com/originals/61/de/b2/61deb298947cebaaee1751b710413085.jpg",
     type: "Livro",
     title: "Senhora",
-    author:
-      "José de Alencar, um dos maiores autores do romantismo brasileiro, retrata neste livro a burguesia e seu temas voltados para o público feminino. O dinheiro é sempre um fator que aproxima ou afasta temporariamente os casais. Orgulho, ciúme e paixões bruscas movem os corações de seus personagens. A mulher, sempre bela e frágeil, sabe lutar pelo amor que escolhem até o final. Romance de paixão, amor, ódio, vingança e perdão.",
-    description: "Livro",
+    author: "José de Alencar",
+    description: "José de Alencar, um dos maiores autores do romantismo brasileiro, retrata neste livro a burguesia e seu temas voltados para o público feminino. O dinheiro é sempre um fator que aproxima ou afasta temporariamente os casais. Orgulho, ciúme e paixões bruscas movem os corações de seus personagens. A mulher, sempre bela e frágeil, sabe lutar pelo amor que escolhem até o final. Romance de paixão, amor, ódio, vingança e perdão.",
     price: '7.90',
     year: 2006,
     language: "Português",
