@@ -23,13 +23,13 @@ const books = [
     year: 2008,
     language: "Português",
     reviews: [
-      {
-        title: "",
-        text: "",
-        username: "",
-        rating: 2,
-        date: "//",
-      },
+      // {
+      //   title: "",
+      //   text: "",
+      //   username: "",
+      //   rating: 0.0,
+      //   date: "//",
+      // },
     ],
   },
   {
@@ -44,13 +44,13 @@ const books = [
     year: 2018,
     language: "Português",
     reviews: [
-      {
-        title: "",
-        text: "",
-        username: "",
-        rating: 0.0,
-        date: "//",
-      },
+      // {
+      //   title: "",
+      //   text: "",
+      //   username: "",
+      //   rating: 0.0,
+      //   date: "//",
+      // },
     ],
   },
   {
@@ -66,13 +66,13 @@ const books = [
     year: 2020,
     language: "Português",
     reviews: [
-      {
-        title: "",
-        text: "",
-        username: "",
-        rating: 0.0,
-        date: "//",
-      },
+      // {
+      //   title: "",
+      //   text: "",
+      //   username: "",
+      //   rating: 0.0,
+      //   date: "//",
+      // },
     ],
   },
   {
@@ -88,13 +88,13 @@ const books = [
     year: 2020,
     language: "Português",
     reviews: [
-      {
-        title: "",
-        text: "",
-        username: "",
-        rating: 0.0,
-        date: "//",
-      },
+      // {
+      //   title: "",
+      //   text: "",
+      //   username: "",
+      //   rating: 0.0,
+      //   date: "//",
+      // },
     ],
   },
   {
@@ -109,13 +109,13 @@ const books = [
     year: 1978,
     language: "Português",
     reviews: [
-      {
-        title: "",
-        text: "",
-        username: "",
-        rating: 0.0,
-        date: "//",
-      },
+      // {
+      //   title: "",
+      //   text: "",
+      //   username: "",
+      //   rating: 0.0,
+      //   date: "//",
+      // },
     ],
   },
   {
@@ -131,13 +131,13 @@ const books = [
     year: 2005,
     language: "Português",
     reviews: [
-      {
-        title: "",
-        text: "",
-        username: "",
-        rating: 0.0,
-        date: "//",
-      },
+      // {
+      //   title: "",
+      //   text: "",
+      //   username: "",
+      //   rating: 0.0,
+      //   date: "//",
+      // },
     ],
   },
   {
@@ -152,13 +152,13 @@ const books = [
     year: 2014,
     language: "Português",
     reviews: [
-      {
-        title: "",
-        text: "",
-        username: "",
-        rating: 0.0,
-        date: "//",
-      },
+      // {
+      //   title: "",
+      //   text: "",
+      //   username: "",
+      //   rating: 0.0,
+      //   date: "//",
+      // },
     ],
   },
   {
@@ -174,13 +174,13 @@ const books = [
     year: 2018,
     language: "Português",
     reviews: [
-      {
-        title: "",
-        text: "",
-        username: "",
-        rating: 0.0,
-        date: "//",
-      },
+      // {
+      //   title: "",
+      //   text: "",
+      //   username: "",
+      //   rating: 0.0,
+      //   date: "//",
+      // },
     ],
   },
   {
@@ -196,13 +196,13 @@ const books = [
     year: 2009,
     language: "Português",
     reviews: [
-      {
-        title: "",
-        text: "",
-        username: "",
-        rating: 0.0,
-        date: "//",
-      },
+      // {
+      //   title: "",
+      //   text: "",
+      //   username: "",
+      //   rating: 0.0,
+      //   date: "//",
+      // },
     ],
   },
   {
@@ -218,13 +218,13 @@ const books = [
     year: 1997,
     language: "Português",
     reviews: [
-      {
-        title: "",
-        text: "",
-        username: "",
-        rating: 0.0,
-        date: "//",
-      },
+      // {
+      //   title: "",
+      //   text: "",
+      //   username: "",
+      //   rating: 0.0,
+      //   date: "//",
+      // },
     ],
   },
   {
@@ -239,13 +239,13 @@ const books = [
     year: 2015,
     language: "Português",
     reviews: [
-      {
-        title: "",
-        text: "",
-        username: "",
-        rating: 0.0,
-        date: "//",
-      },
+      // {
+      //   title: "",
+      //   text: "",
+      //   username: "",
+      //   rating: 0.0,
+      //   date: "//",
+      // },
     ],
   },
   {
@@ -261,13 +261,13 @@ const books = [
     year: 2006,
     language: "Português",
     reviews: [
-      {
-        title: "",
-        text: "",
-        username: "",
-        rating: 0.0,
-        date: "//",
-      },
+      // {
+      //   title: "",
+      //   text: "",
+      //   username: "",
+      //   rating: 0.0,
+      //   date: "//",
+      // },
     ],
   },
   {
