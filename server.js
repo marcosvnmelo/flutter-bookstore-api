@@ -338,17 +338,19 @@ server.get("/books", (req, res) => {
 server.get("/books/:list", (req, res) => {
   const listParam = req.params.list;
 
-  const booksPlusRating = books.map((book) => {
+  const booksByList = [];
+
+  books.forEach((book) => {
     if (book.list === listParam) {
-      return {
+      booksByList.push({
         ...book,
         nreviews: book.reviews.length,
         rating: book.reviews.length > 0 ? (book.reviews.map(e => e.rating).reduce((acc, item) => acc + item) / book.reviews.length).toString() : "0.0",
-      }
+      });
     }
   });
 
-  return res.json(booksPlusRating);
+  return res.json(booksByList);
 });
 
 server.get("/book/:index", (req, res) => {
