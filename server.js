@@ -329,11 +329,11 @@ server.get("/book/:index", (req, res) => {
 
   const index = Number.parseInt(i) - 1;
 
-  return res.json({
+  return res.json([{
     ...books[index],
     nreviews: books[index].reviews.length,
     rating: books[index].reviews.length > 0 ? (books[index].reviews.map(e => e.rating).reduce((acc, item) => acc + item) / books[index].reviews.length).toString() : "0.0",
-  });
+  }]);
 });
 
 server.listen(process.env.PORT, () => console.log("API running"));
