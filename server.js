@@ -12,6 +12,7 @@ server.use(express.json());
 const books = [
   {
     id: 1,
+    list: "popular",
     imageUrl: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2014/10/391946-novelas-ligeras-convertidas-manganime.png?itok=5nWwtbY3",
     type: "Light novel",
     title: "Bakemonogatari - Book 1",
@@ -49,6 +50,7 @@ const books = [
   },
   {
     id: 2,
+    list: "popular",
     imageUrl:
       "https://images-na.ssl-images-amazon.com/images/I/812ot79TCsL.jpg",
     type: "Livro",
@@ -71,6 +73,7 @@ const books = [
   },
   {
     id: 3,
+    list: "popular",
     imageUrl: "https://m.media-amazon.com/images/I/51amKTwzkPL.jpg",
     type: "Livro",
     title: "O Morro dos Ventos Uivantes",
@@ -92,6 +95,7 @@ const books = [
   },
   {
     id: 4,
+    list: "popular",
     imageUrl:
       "http://lojasaraiva.vteximg.com.br/arquivos/ids/12054945/1002909425.jpg?v=637141927089070000",
     type: "Livro",
@@ -114,6 +118,7 @@ const books = [
   },
   {
     id: 5,
+    list: "sale",
     imageUrl:
       "https://a-static.mlcdn.com.br/618x463/o-diario-de-anne-frank-livro-edicao-de-luxo-capa-dura-spmix/spmixshop/6246607661/1ff2dbc6ca5728ceabbf260532d92cca.jpg",
     type: "Livro",
@@ -135,6 +140,7 @@ const books = [
   },
   {
     id: 6,
+    list: "sale",
     imageUrl: "https://m.media-amazon.com/images/I/51XULadddlL.jpg",
     type: "Livro",
     title: "Dom Quixote de La Mancha",
@@ -156,6 +162,7 @@ const books = [
   },
   {
     id: 7,
+    list: "sale",
     imageUrl:
       "https://f.i.uol.com.br/fotografia/2017/08/11/703323-400x600-1.jpeg",
     type: "Livro",
@@ -178,6 +185,7 @@ const books = [
   },
   {
     id: 8,
+    list: "sale",
     imageUrl: "https://m.media-amazon.com/images/I/91rtArfzScL.jpg",
     type: "Livro",
     title: "Alice no País das Maravilhas",
@@ -199,6 +207,7 @@ const books = [
   },
   {
     id: 9,
+    list: "favorites",
     imageUrl:
       "https://www.tamiresdecarvalho.com/wp-content/uploads/2019/03/91XO-9O58dL.jpg",
     type: "Livro",
@@ -221,6 +230,7 @@ const books = [
   },
   {
     id: 10,
+    list: "favorites",
     imageUrl:
       "https://images.tcdn.com.br/img/img_prod/617642/a_arte_da_guerra_sun_tzu_10163_1_20190719172751.png",
     type: "Livro",
@@ -242,6 +252,7 @@ const books = [
   },
   {
     id: 11,
+    list: "favorites",
     imageUrl:
       "https://d19qz1cqidnnhq.cloudfront.net/imagens/capas/e46ef4365583e6c89069b2d90eb2683a627fc2d1.jpg",
     type: "Livro",
@@ -264,6 +275,7 @@ const books = [
   },
   {
     id: 12,
+    list: "cart",
     imageUrl: "http://i.imgur.com/MbNcr6s.jpg",
     type: "Livro",
     title: "Joyland",
@@ -285,6 +297,7 @@ const books = [
   },
   {
     id: 13,
+    list: "cart",
     imageUrl:
       "https://i.pinimg.com/originals/61/de/b2/61deb298947cebaaee1751b710413085.jpg",
     type: "Livro",
@@ -311,13 +324,27 @@ server.get("/", (req, res) => {
 });
 
 server.get("/books", (req, res) => {
-  console.log(books[12]);
-
   const booksPlusRating = books.map((book) => {
     return {
       ...book,
       nreviews: book.reviews.length,
       rating: book.reviews.length > 0 ? (book.reviews.map(e => e.rating).reduce((acc, item) => acc + item) / book.reviews.length).toString() : "0.0",
+    }
+  });
+
+  return res.json(booksPlusRating);
+});
+
+server.get("/books/:list", (req, res) => {
+  const listParam = req.params.index;
+
+  const booksPlusRating = books.map((book) => {
+    if (book.list === listParam) {
+      return {
+        ...book,
+        nreviews: book.reviews.length,
+        rating: book.reviews.length > 0 ? (book.reviews.map(e => e.rating).reduce((acc, item) => acc + item) / book.reviews.length).toString() : "0.0",
+      }
     }
   });
 
