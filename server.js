@@ -269,13 +269,11 @@ const books = [
   },
   {
     id: 13,
-    imageUrl:
-      "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2014/10/391946-novelas-ligeras-convertidas-manganime.png?itok=5nWwtbY3",
+    imageUrl: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2014/10/391946-novelas-ligeras-convertidas-manganime.png?itok=5nWwtbY3",
     type: "Light novel",
     title: "Bakemonogatari - Book 1",
     author: "NISIOISIN",
-    description:
-      'Bakemonogatari segue a história de Koyomi Araragi, um estudante do terceiro ano do ensino médio que é um "quase-humano" após ter brevemente se tornado um vampiro. Um dia, uma colega de classe chamada Hitagi Senjougahara, que nunca fala com ninguém, cai das escadarias da escola direto nos braços de Koyomi. Ele então descobre que ela pesa quase nada, desafiando as leis da física. Mesmo sendo ameaçado por ela e avisado para que ficasse longe e esquecesse o que presenciou, Koyomi oferece ajuda e a apresenta a Meme Oshino, um estranho homem de meia idade que vive num prédio abandonado, que o fez voltar a ser humano novamente.',
+    description: 'Bakemonogatari segue a história de Koyomi Araragi, um estudante do terceiro ano do ensino médio que é um "quase-humano" após ter brevemente se tornado um vampiro. Um dia, uma colega de classe chamada Hitagi Senjougahara, que nunca fala com ninguém, cai das escadarias da escola direto nos braços de Koyomi. Ele então descobre que ela pesa quase nada, desafiando as leis da física. Mesmo sendo ameaçado por ela e avisado para que ficasse longe e esquecesse o que presenciou, Koyomi oferece ajuda e a apresenta a Meme Oshino, um estranho homem de meia idade que vive num prédio abandonado, que o fez voltar a ser humano novamente.',
     price: '16.95',
     year: 2006,
     language: "Inglês",
@@ -313,18 +311,20 @@ server.get("/", (req, res) => {
 });
 
 server.get("/books", (req, res) => {
+  console.log(books[12]);
+
   return res.json(books);
 });
 
 server.get("/book/:index", (req, res) => {
-  const { index } = req.params;
+  const i = req.params.index;
+
+  const index = Number.parseInt(i) - 1;
 
   return res.json({
     ...books[index],
     nreviews: books[index].reviews.length,
-    rating: books[index].reviews.length > 0 ? books[index].reviews.reduce((acc, item) => {
-      rating: acc.rating + item.rating;
-    }).rating / books[index].reviews.length : 0,
+    rating: books[index].reviews.length > 0 ? books[12].reviews.map(e => e.rating).reduce((acc, item) => acc + item) / books[12].reviews.length : 0,
   });
 });
 
