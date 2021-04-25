@@ -317,7 +317,7 @@ server.get("/books", (req, res) => {
     return {
       ...book,
       nreviews: book.reviews.length,
-      rating: book.reviews.length > 0 ? book.reviews.map(e => e.rating).reduce((acc, item) => ((acc + item) / book.reviews.length).toString()) : "0.0",
+      rating: book.reviews.length > 0 ? (book.reviews.map(e => e.rating).reduce((acc, item) => acc + item) / book.reviews.length).toString() : "0.0",
     }
   });
 
@@ -332,8 +332,12 @@ server.get("/book/:index", (req, res) => {
   return res.json({
     ...books[index],
     nreviews: books[index].reviews.length,
-    rating: books[index].reviews.length > 0 ? books[index].reviews.map(e => e.rating).reduce((acc, item) => ((acc + item) / books[index].reviews.length).toString()) : "0.0",
+    rating: books[index].reviews.length > 0 ? (books[index].reviews.map(e => e.rating).reduce((acc, item) => acc + item) / books[index].reviews.length).toString() : "0.0",
   });
 });
 
-server.listen(process.env.PORT, () => console.log('running'));
+server.listen(process.env.PORT, () => console.log({
+  ...books[12],
+  nreviews: books[12].reviews.length,
+  rating: books[12].reviews.length > 0 ? (books[12].reviews.map(e => e.rating).reduce((acc, item) => acc + item) / books[12].reviews.length).toString() : "0.0",
+}));
